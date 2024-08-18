@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vermelho"
+    tools:context=".Senha">
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/branca"
+        android:ems="10"
+        android:maxLength="7"
+        android:gravity="center"
+        android:hint="Sua Senha"
+        android:inputType="textPassword"
+        android:padding="30dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+        <!-- maxLength == numero maximo de caracteres que pode ser digitado -->
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao"
+        android:drawableStart="@drawable/botao"
+        android:drawableLeft="@drawable/botao"
+        android:drawableTop="@drawable/botao"
+        android:drawableEnd="@drawable/botao"
+        android:drawableRight="@drawable/botao"
+        android:drawableBottom="@drawable/botao"
+        android:text="Confirmar"
+        android:textColor="@color/vermelho"
+        android:textColorLink="@color/branca"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+</androidx.constraintlayout.widget.ConstraintLayout>
